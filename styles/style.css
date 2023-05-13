@@ -277,3 +277,107 @@ body {
 .button.extra-action-button span:first-child {
     margin-right: 10px;
 }
+
+.order {
+    background-image: url("../images/order_bg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 180px;
+    overflow: hidden;
+}
+
+.order .container {
+    position: relative;
+}
+
+.order-title {
+    font-family: 'Merriweather', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.order-image {
+    position: absolute;
+    top: 0;
+    right: calc(100% - 764px);
+    z-index: -1;
+}
+
+.order-form {
+    background: #211a16;
+    border: 1px solid #353535;
+    border-radius: 16px;
+    margin-top: 60px;
+    max-width: 426px;
+    box-sizing: border-box;
+    padding: 60px 40px;
+    margin-left: 674px;
+}
+
+.order-form-text {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.order-form-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.order-form-input {
+    background: linear-gradient(95.61deg, #da8023 0%, #e2b438 100%);
+    width: 344px;
+    height: 62px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-form-input input {
+    padding: 20px 10px;
+    background: #211a16;
+    border-radius: 8px;
+    width: 344px;
+    height: 62px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #E2B438;
+    color: white;
+}
+
+.order-form-inputs .button {
+    width: 344px;
+    height: 62px;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+}
+
+.footer {
+    padding: 60px 0;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rights {
+    font-size: 16px;
+    line-height: 20px;
+}
