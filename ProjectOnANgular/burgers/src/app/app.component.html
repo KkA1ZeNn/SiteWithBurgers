@@ -2,18 +2,18 @@
   <header class="header">
     <div class="header_container container">
       <div class="header_container_img">
-        <img src="images/Logo.svg" alt="logo">
+        <img src="./assets/images/Logo.svg" alt="logo">
       </div>
       <nav class="header_container_menu">
         <ul class="menu-list">
           <li class="menu-list_item">
-            <a data-link="why">Почему у нас</a>
+            <a (click)="scrollTo(why)">Почему у нас</a>
           </li>
           <li class="menu-list_item">
-            <a data-link="products">Меню бургеров</a>
+            <a (click)="scrollTo(products)">Меню бургеров</a>
           </li>
           <li class="menu-list_item">
-            <a data-link="order">Оформление заказа</a>
+            <a (click)="scrollTo(order)">Оформление заказа</a>
           </li>
         </ul>
       </nav>
@@ -31,35 +31,34 @@
           бургеров. Готовим для вас лучшие бургеры в городе из отборной мраморной говядины.
         </p>
         <div class="main-action">
-          <button class="button" id = "main-action-button">
+          <button class="button" id = "main-action-button" (click)="scrollTo(products)">
             Смотреть меню
           </button>
         </div>
       </div>
-      <img src="images/main_burger.png" alt="Big burger" class="main-img">
+      <img src="./assets/images/main_burger.png" alt="Big burger" class="main-img">
     </div>
   </section>
-
 </div>
 
-<section class="why" id = "why">
+<section class="why" id = "why" #why>
   <div class="container">
     <h2 class="why-title">Почему нас выбирают?</h2>
     <div class="why-items">
       <div class="why-item">
-        <img src="images/burger.png" alt="burger icon" class="why-item-img">
+        <img src="./assets/images/burger.png" alt="burger icon" class="why-item-img">
         <h3 class="why-item-title">Авторские рецепты</h3>
         <p class="why-item-text">Наши бургеры обладают уникальным сочетанием вкусов и не похожи ни на какие
           другие. Мы тщательно отбираем лучшие ингредиенты и сочетания вкусов для нашего меню.</p>
       </div>
       <div class="why-item">
-        <img src="images/meat.png" alt="meat icon" class="why-item-img">
+        <img src="./assets/images/meat.png" alt="meat icon" class="why-item-img">
         <h3 class="why-item-title">Мраморная говядина</h3>
         <p class="why-item-text">Для наших бургеров мы используем отборную 100% мраморную говядину, которую
           закупаем исключительно у фермеров. Мы уверены в качестве нашего мяса.</p>
       </div>
       <div class="why-item">
-        <img src="images/food%20truck.png" alt="food truck icon" class="why-item-img">
+        <img src="./assets/images/food%20truck.png" alt="food truck icon" class="why-item-img">
         <h3 class="why-item-title">Быстрая доставка</h3>
         <p class="why-item-text">Мы доставляем в пределах МКАД за 30 минут, а если не успеем — доставка
           бесплатно. Мы тщательно упаковываем наши бургеры, чтобы по дороге они не остыли.</p>
@@ -68,13 +67,13 @@
   </div>
 </section>
 
-<section class="products" id = "products">
+<section class="products" id = "products" #products>
   <div class="container">
     <h2 class="products-title">выберите свой бургер</h2>
     <div class="products-items">
       <div class="products-item">
         <div class="products-item-img">
-          <img src="images/Burger%20(1).png" alt="Burger 1">
+          <img src="./assets/images/Burger%20(1).png" alt="Burger 1">
         </div>
         <h3 class="products-item-title">Бургер чеддер & бекон</h3>
         <p class="products-item-text">Котлета из говядины криспи, булочка, томат, сыр Чеддер, грудинка, лук
@@ -85,7 +84,7 @@
             <div class="extra-info-weight">360 гр</div>
           </div>
           <div class="products-item-extra-action">
-            <button class="extra-action-button button">
+            <button class="extra-action-button button" (click)="scrollTo(order)">
               <span>Заказать</span>
               <span>
                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +107,7 @@
       </div>
       <div class="products-item">
         <div class="products-item-img">
-          <img src="images/Burger%20(2).png" alt="Burger 2">
+          <img src="./assets/images/Burger%20(2).png" alt="Burger 2">
         </div>
         <h3 class="products-item-title">BBQ с беконом и курицей</h3>
         <p class="products-item-text">Булочка бриошь с кунжутом, куриная котлета, сыр чеддер, томат, огурец
@@ -119,7 +118,7 @@
             <div class="extra-info-weight">390 гр</div>
           </div>
           <div class="products-item-extra-action">
-            <button class="extra-action-button button">
+            <button class="extra-action-button button" (click)="scrollTo(order)">
               <span>Заказать</span>
               <span>
                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
@@ -134,7 +133,7 @@
       </div>
       <div class="products-item">
         <div class="products-item-img">
-          <img src="images/Burger%20(3).png" alt="Burger 3">
+          <img src="./assets/images/Burger%20(3).png" alt="Burger 3">
         </div>
         <h3 class="products-item-title">Дабл биф бургер</h3>
         <p class="products-item-text">Две говяжьи котлеты, сыр чеддер, салат романо, маринованные огурцы, свежий
@@ -145,7 +144,7 @@
             <div class="extra-info-weight">420 гр</div>
           </div>
           <div class="products-item-extra-action">
-            <button class="extra-action-button button">
+            <button class="extra-action-button button" (click)="scrollTo(order)">
               <span>Заказать</span>
               <span>
                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
@@ -160,7 +159,7 @@
       </div>
       <div class="products-item">
         <div class="products-item-img">
-          <img src="images/Burger%20(4).png" alt="Burger 4">
+          <img src="./assets/images/Burger%20(4).png" alt="Burger 4">
         </div>
         <h3 class="products-item-title">Баварский бургер</h3>
         <p class="products-item-text">Булочка для бургера, говяжья котлета, красный лук, сыр, охотничья
@@ -171,7 +170,7 @@
             <div class="extra-info-weight">220 гр</div>
           </div>
           <div class="products-item-extra-action">
-            <button class="extra-action-button button">
+            <button class="extra-action-button button" (click)="scrollTo(order)">
               <span>Заказать</span>
               <span>
                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
@@ -186,7 +185,7 @@
       </div>
       <div class="products-item">
         <div class="products-item-img">
-          <img src="images/Burger%20(5).png" alt="Burger 5">
+          <img src="./assets/images/Burger%20(5).png" alt="Burger 5">
         </div>
         <h3 class="products-item-title">Бекон чизбургер</h3>
         <p class="products-item-text">Булочка для бургера, говяжья котлета, грудинка, помидор, огурец
@@ -197,7 +196,7 @@
             <div class="extra-info-weight">220 гр</div>
           </div>
           <div class="products-item-extra-action">
-            <button class="extra-action-button button">
+            <button class="extra-action-button button" (click)="scrollTo(order)">
               <span>Заказать</span>
               <span>
                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
@@ -212,7 +211,7 @@
       </div>
       <div class="products-item">
         <div class="products-item-img">
-          <img src="images/Burger%20(6).png" alt="Burger 6">
+          <img src="./assets/images/Burger%20(6).png" alt="Burger 6">
         </div>
         <h3 class="products-item-title">Индиана бургер</h3>
         <p class="products-item-text">Булочка для бургера, котлета куриная, грудинка, яйцо, огурец маринованный,
@@ -223,7 +222,7 @@
             <div class="extra-info-weight">320 гр</div>
           </div>
           <div class="products-item-extra-action">
-            <button class="extra-action-button button">
+            <button class="extra-action-button button" (click)="scrollTo(order)">
               <span>Заказать</span>
               <span>
                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
@@ -238,7 +237,7 @@
       </div>
       <div class="products-item">
         <div class="products-item-img">
-          <img src="images/7.png" alt="Burger 7">
+          <img src="./assets/images/7.png" alt="Burger 7">
         </div>
         <h3 class="products-item-title">Вегги бургер</h3>
         <p class="products-item-text">Булочка для бургера, вегетарианская котлета, красный лук, сыр, свежий
@@ -249,7 +248,7 @@
             <div class="extra-info-weight">280 гр</div>
           </div>
           <div class="products-item-extra-action">
-            <button class="extra-action-button button">
+            <button class="extra-action-button button" (click)="scrollTo(order)">
               <span>Заказать</span>
               <span>
                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
@@ -264,7 +263,7 @@
       </div>
       <div class="products-item">
         <div class="products-item-img">
-          <img src="images/8.png" alt="Burger 8">
+          <img src="./assets/images/8.png" alt="Burger 8">
         </div>
         <h3 class="products-item-title">Плаксивый Джо</h3>
         <p class="products-item-text">Булочка для бургера, говяжья котлета, грудинка, помидор, огурец
@@ -275,7 +274,7 @@
             <div class="extra-info-weight">380 гр</div>
           </div>
           <div class="products-item-extra-action">
-            <button class="extra-action-button button">
+            <button class="extra-action-button button" (click)="scrollTo(order)">
               <span>Заказать</span>
               <span>
                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
@@ -290,7 +289,7 @@
       </div>
       <div class="products-item">
         <div class="products-item-img">
-          <img src="images/9.png" alt="Burger 9">
+          <img src="./assets/images/9.png" alt="Burger 9">
         </div>
         <h3 class="products-item-title">Двойной чиз бургер</h3>
         <p class="products-item-text">Булочка для бургера, две говяжьи котлеты, двойной сыр чеддар, огурец
@@ -301,7 +300,7 @@
             <div class="extra-info-weight">400 гр</div>
           </div>
           <div class="products-item-extra-action">
-            <button class="extra-action-button button">
+            <button class="extra-action-button button" (click)="scrollTo(order)">
               <span>Заказать</span>
               <span>
                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
@@ -316,7 +315,7 @@
       </div>
       <div class="products-item">
         <div class="products-item-img">
-          <img src="images/10.png" alt="Burger 10">
+          <img src="./assets/images/10.png" alt="Burger 10">
         </div>
         <h3 class="products-item-title">Фрешбургер</h3>
         <p class="products-item-text">Булочка для бургера, говяжья котлета, бекон, сыр чеддар, яйцо, салями,
@@ -327,7 +326,7 @@
             <div class="extra-info-weight">300 гр</div>
           </div>
           <div class="products-item-extra-action">
-            <button class="extra-action-button button">
+            <button class="extra-action-button button" (click)="scrollTo(order)">
               <span>Заказать</span>
               <span>
                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
@@ -342,7 +341,7 @@
       </div>
       <div class="products-item">
         <div class="products-item-img">
-          <img src="images/11.png" alt="Burger 11">
+          <img src="./assets/images/11.png" alt="Burger 11">
         </div>
         <h3 class="products-item-title">Цуккини бургер</h3>
         <p class="products-item-text">Булочка для бургера, вегетарианская котлета из нута, цуккини на гриле,
@@ -353,7 +352,7 @@
             <div class="extra-info-weight">320 гр</div>
           </div>
           <div class="products-item-extra-action">
-            <button class="extra-action-button button">
+            <button class="extra-action-button button" (click)="scrollTo(order)">
               <span>Заказать</span>
               <span>
                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
@@ -368,7 +367,7 @@
       </div>
       <div class="products-item">
         <div class="products-item-img">
-          <img src="images/12.png" alt="Burger 12">
+          <img src="./assets/images/12.png" alt="Burger 12">
         </div>
         <h3 class="products-item-title">Двойной бургер чеддар</h3>
         <p class="products-item-text">Булочка для бургера, котлета говяжья, грудинка, красный лук, огурец
@@ -379,7 +378,7 @@
             <div class="extra-info-weight">360 гр</div>
           </div>
           <div class="products-item-extra-action">
-            <button class="extra-action-button button">
+            <button class="extra-action-button button" (click)="scrollTo(order)">
               <span>Заказать</span>
               <span>
                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
@@ -396,25 +395,25 @@
   </div>
 </section>
 
-<section class="order" id = "order">
+<section class="order" id = "order" #order>
   <div class="container">
     <h2 class="order-title">оформление заказа</h2>
-    <img src="images/order_image.png" alt="box with burger inside" class="order-image">
+    <img src="./assets/images/order_image.png" alt="box with burger inside" class="order-image">
     <div class="order-form">
       <p class="order-form-text">
         Заполните все данные и наш менеджер свяжется с вами для подтверждения заказа
       </p>
-      <div class="order-form-inputs">
-        <div class="order-form-input">
-          <input type="text" placeholder="Ваш заказ" id = "burger">
+      <div class="order-form-inputs" [formGroup]="form">
+        <div class="order-form-input" [class] = "{'error': form.get('order')?.invalid && (form.get('order')?.dirty || form.get('order')?.touched)}">
+          <input type="text" placeholder="Ваш заказ" id = "burger" formControlName="order">
         </div>
         <div class="order-form-input">
-          <input type="text" placeholder="Ваше имя" id = "name">
+          <input type="text" placeholder="Ваше имя" id = "name" formControlName="name">
         </div>
         <div class="order-form-input">
-          <input type="text" placeholder="Ваш телефон" id = "phone">
+          <input type="text" placeholder="Ваш телефон" id = "phone" formControlName="phone">
         </div>
-        <button class="button" id = "order-action">Оформить заказ</button>
+        <button class="button" id = "order-action" (click)="confirmOrder()">Оформить заказ</button>
       </div>
     </div>
   </div>
@@ -423,7 +422,7 @@
 <footer class="footer">
   <div class="container">
     <div class="logo">
-      <img src="images/Logo.svg" alt="logo">
+      <img src="./assets/images/Logo.svg" alt="logo">
     </div>
     <div class="rights">Все права защищены</div>
   </div>
