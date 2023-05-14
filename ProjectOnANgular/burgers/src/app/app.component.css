@@ -295,10 +295,6 @@
   justify-content: center;
 }
 
-.order-form-input.error {
-  background: red;
-}
-
 .order-form-input input {
   padding: 20px 10px;
   background: #211a16;
@@ -309,6 +305,10 @@
   outline: none;
   border: 1px solid #E2B438;
   color: white;
+}
+
+.order-form-input.error input {
+  border: 1px solid red;
 }
 
 .order-form-inputs .button {

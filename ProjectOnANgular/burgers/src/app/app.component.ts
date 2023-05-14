@@ -12,19 +12,29 @@ export class AppComponent
       order: ["", Validators.required],
       name: ["", Validators.required],
       phone: ["", Validators.required]
-    })
+    });
+
+  productsData =
+  [
+    {
+        image:"1.png",
+      title:,
+      text:
+    }
+  ];
   constructor(private fb: FormBuilder) {
   }
   scrollTo(target: HTMLElement)
   {
-    target.scrollIntoView({behavior:"smooth"})
+    target.scrollIntoView({behavior:"smooth"});
   }
 
   confirmOrder()
   {
     if (this.form.valid)
     {
-      alert("Спасибо за заказ! Мы скоро свяжемся с вами!")
+      alert("Спасибо за заказ! Мы скоро свяжемся с вами!");
+      this.form.reset();
     }
   }
 }
